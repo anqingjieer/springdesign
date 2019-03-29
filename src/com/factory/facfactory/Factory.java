@@ -1,6 +1,6 @@
-package com.company.facfactory;
+package com.factory.facfactory;
 
-import com.company.factory.car;
+import com.factory.factory.car;
 
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)

@@ -1,7 +1,7 @@
-package com.company.facfactory;
+package com.factory.facfactory;
 
-import com.company.factory.Bwm;
-import com.company.factory.car;
+import com.factory.factory.Benci;
+import com.factory.factory.car;
 
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)
@@ -9,10 +9,10 @@ import com.company.factory.car;
  * @description:
  * @date 2019/3/27 21:11 创建
  **/
-public class Bwmfactory implements  Factory{
+public class Bencifactory implements Factory {
     @Override
     public car createCar() {
-        return new Bwm();
+        return new Benci();
     }
 
 }

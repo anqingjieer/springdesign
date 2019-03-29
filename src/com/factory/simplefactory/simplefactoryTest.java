@@ -1,4 +1,4 @@
-package com.company.simplefactory;
+package com.factory.simplefactory;
 
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)

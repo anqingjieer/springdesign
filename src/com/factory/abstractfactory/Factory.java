@@ -1,9 +1,9 @@
-package com.company.abstractfactory;
+package com.factory.abstractfactory;
 
-import com.company.factory.Benci;
-import com.company.factory.BigZh;
-import com.company.factory.Bwm;
-import com.company.factory.car;
+import com.factory.factory.Benci;
+import com.factory.factory.BigZh;
+import com.factory.factory.Bwm;
+import com.factory.factory.car;
 
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)

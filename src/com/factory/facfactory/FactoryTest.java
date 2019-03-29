@@ -1,4 +1,4 @@
-package com.company.facfactory;
+package com.factory.facfactory;
 
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)
