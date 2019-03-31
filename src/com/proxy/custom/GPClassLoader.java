@@ -5,15 +5,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-/**
- * Created by Tom on 2018/3/10.
- */
+
 public class GPClassLoader extends ClassLoader{
 
     private File classPathFile;
 
     public GPClassLoader(){
-        String classPath = GPClassLoader.class.getResource("").getPath();
+        String classPath = "E://";
         this.classPathFile = new File(classPath);
     }
 

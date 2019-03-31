@@ -8,9 +8,7 @@ import java.io.FileWriter;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
-/**
- * Created by Tom on 2018/3/10.
- */
+
 public class GPProxy {
 
     public static final String ln = "\r\n";
@@ -23,9 +21,7 @@ public class GPProxy {
            String src = generateSrc(interfaces);
 
            //2、Java文件输出磁盘
-           String filePath = GPProxy.class.getResource("").getPath();
-           System.out.println(filePath);
-           File f = new File(filePath + "$Proxy0.java");
+           File f = new File("E://" + "$Proxy0.java");
            FileWriter fw = new FileWriter(f);
            fw.write(src);
            fw.flush();
@@ -56,8 +52,8 @@ public class GPProxy {
     private static String generateSrc(Class<?>[] interfaces){
 
             StringBuffer sb = new StringBuffer();
-            sb.append("package com.gupaoedu.vip.pattern.proxy.custom;" + ln);
-            sb.append("import com.gupaoedu.vip.pattern.proxy.staticed.Person;" + ln);
+            sb.append("package com.proxy.custom;" + ln);
+            sb.append("import com.proxy.staticed.Person;" + ln);
             sb.append("import java.lang.reflect.Method;" + ln);
             sb.append("public class $Proxy0 implements " + interfaces[0].getName() + "{" + ln);
 

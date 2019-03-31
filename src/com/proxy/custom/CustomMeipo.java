@@ -6,9 +6,6 @@ import com.proxy.staticed.Person;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-/**
- * Created by Tom on 2018/3/10.
- */
 public class CustomMeipo implements  GPInvocationHandler {
 
     //被代理的对象，把引用给保存下来
