@@ -1,8 +1,6 @@
 package com.proxy.staticed;
 
-/**
- * Created by Tom on 2018/3/10.
- */
+
 public interface Person {
 
     public void findLove();
@@ -13,5 +11,5 @@ public interface Person {
 
     public void findJob();
 
-    //......
+
 }

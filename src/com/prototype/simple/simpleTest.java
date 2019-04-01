@@ -7,7 +7,7 @@ package com.prototype.simple;
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)
  * @version 1.0
- * @description:
+ * @description:原形模式的应用，
  * @date 2019/3/30 19:16 创建
  **/
 

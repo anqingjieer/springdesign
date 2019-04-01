@@ -18,7 +18,6 @@ public class JDK58 implements InvocationHandler{
 
        Class<?> clazz = target.getClass();
 
-        //下半截，老师深入底层来给大家讲解字节码是如何重组的
         //用来生成一个新的对象（字节码重组来实现）
         return Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
     }

@@ -2,9 +2,7 @@ package com.proxy.jdk;
 
 import com.proxy.staticed.Person;
 
-/**
- * Created by Tom on 2018/3/10.
- */
+
 public class XieMu implements Person {
 
     @Override

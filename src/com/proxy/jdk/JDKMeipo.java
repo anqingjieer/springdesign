@@ -6,9 +6,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
-/**
- * Created by Tom on 2018/3/10.
- */
+
 public class JDKMeipo implements InvocationHandler{
     //被代理的对象，把引用给保存下来
     private Person target;
@@ -18,11 +16,16 @@ public class JDKMeipo implements InvocationHandler{
 
        Class<?> clazz = target.getClass();
 
-        //下半截，老师深入底层来给大家讲解字节码是如何重组的
         //用来生成一个新的对象（字节码重组来实现）
         return Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),this);
     }
-
+    /**
+     * @description：
+     * @param: [proxy, method, args]  代理类   代理的方法    方法中的参数
+     * @return: java.lang.Object
+     * @author 鲁朋博(pengbo.lu@ucarinc.com)
+     * @date  2019/4/1  15:56 创建
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 

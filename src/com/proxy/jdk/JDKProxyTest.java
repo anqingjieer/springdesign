@@ -30,14 +30,9 @@ public class JDKProxyTest {
 
             //通过反编译工具可以查看源代码
             byte [] bytes = ProxyGenerator.generateProxyClass("$Proxy0",new Class[]{Person.class});
-            FileOutputStream os = new FileOutputStream("E://$Proxy0.class");
+            FileOutputStream os = new FileOutputStream("f://$Proxy0.class");
             os.write(bytes);
             os.close();
-
-
-
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
