@@ -7,6 +7,8 @@ import java.util.concurrent.CountDownLatch;
 /**
  * @author 鲁朋博(pengbo.lu @ ucarinc.com)
  * @version 1.0
+ * <b>CountDownLatch允许一个线程等待其他线程完成之后再去执行。例如，应用程序的主线程希望在负责启动框架服务的线程已经启动完成所有的
+ * 服务框架之后再去执行，就是模拟高并发的情况，是程序一直在等待</b>
  * @description:测试饿汉式单线程模式是否是线程安全性的。
  * @date 2019/3/28 21:28 创建
  **/
@@ -27,7 +29,7 @@ public class HungryTest {
 
                         try {
                             // 阻塞
-                            // count = 0 就会释放所有的共享锁
+                            // count = 0 就会释放所有的共享锁,实现模拟高并发
                             // 万箭齐发
                             latch.await();
                         } catch (Exception e) {
